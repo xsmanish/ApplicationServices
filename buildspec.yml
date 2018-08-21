@@ -9,4 +9,5 @@ phases:
     commands:
       - ls
       - cd ts-cicd-test
+      - pwd
       - serverless deploy | tee deploy.out
