@@ -8,6 +8,6 @@ phases:
   build:
     commands:
       - ls
-      - cd ts-cicd-test
+      - lcd ts-cicd-test
       - pwd
       - serverless deploy | tee deploy.out
