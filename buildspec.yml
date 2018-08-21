@@ -9,7 +9,7 @@
 #     commands:
 #       - cd ts-cicd-test && pwd && ls && serverless deploy | tee deploy.out
 
-version: 0.2
+version: 0.1
 phases:
   install:
     commands:
@@ -20,6 +20,7 @@ phases:
   build:
     commands:
       - cd ts-cicd-test && pwd && ls && serverless deploy | tee deploy.out
+      - cd ts-cicd-test2 && pwd && ls && serverless deploy | tee deploy.out
 
       # - pwd  
       # - ls 
