@@ -19,8 +19,8 @@ phases:
       - echo Build enviromment `uname -a` `aws --version 2>&1` node/`node --version` npm/`npm --version`
   build:
     commands:
-      - cd ts-cicd-test && pwd && ls && serverless deploy | tee deploy.out
-      - cd ts-cicd-test2 && pwd && ls && serverless deploy | tee deploy.out
+      - cd ts-cicd-test && pwd && ls && serverless deploy 
+      #- cd ts-cicd-test2 && pwd && ls && serverless deploy
 
       # - pwd  
       # - ls 
