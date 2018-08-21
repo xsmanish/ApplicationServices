@@ -1,10 +1,25 @@
-version: 0.1
+# version: 0.1
+# phases:
+#   install:
+#     commands:
+#       - cd ts-cicd-test && npm install
+#       - npm install -g serverless
+#       - echo Build enviromment `uname -a` `aws --version 2>&1` node/`node --version` npm/`npm --version`
+#   build:
+#     commands:
+#       - cd ts-cicd-test && pwd && ls && serverless deploy | tee deploy.out
+
+version: 0.2
 phases:
   install:
     commands:
-      - cd ts-cicd-test && npm install
+      - cd ts-cicd-test 
+      - npm install
       - npm install -g serverless
       - echo Build enviromment `uname -a` `aws --version 2>&1` node/`node --version` npm/`npm --version`
   build:
     commands:
-      - cd ts-cicd-test && pwd && ls && serverless deploy | tee deploy.out
+      - cd ts-cicd-test 
+      - pwd  
+      - ls 
+      - serverless deploy | tee deploy.out
